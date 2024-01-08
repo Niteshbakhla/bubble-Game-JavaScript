@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: General Sans;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(159, 243, 159);
+}
+.main>h1{
+    font-size: 5vw;
+}
+
+
+.bBoard{
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.scoreBoard{
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(60, 120, 60);
+}
+.elem{
+   
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.elem> .score{
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    color: #000;
+    width: 35px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.elem> #timeVal{
+    font-weight: 900;
+    font-size: 4vw;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.bubbleBoard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    width: 100%;
+    height: calc(100% - 80px);
+   
+}
+
+.bubble{
+    margin: 3px;
+    font-size: 2vw;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgb(98, 186, 98);
+}
+
+.bubble:hover{
+    background-color: rgb(50, 116, 50);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.h1{
+    font-size: 5vw;
+    color: rgb(23, 113, 33);
+    animation: blink 2s linear infinite;
+    
+}
+
+
+@keyframes blink {
+    0%{
+       opacity: 0;
+    }
+    50%{
+       opacity: 1;
+    }
+    100%{
+       opacity: 0;
+    }
+}
